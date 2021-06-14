@@ -1,0 +1,28 @@
+<%= stylesheet_link_tag 'login' %>
+<div class="login-page">
+  <div class="form">
+    <h2 class="mb-4" style="font-family: Ubuntu">
+      SimpleShop
+    </h2>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+      <div class="form-horizontal" align="center">
+        <%= f.email_field :email, autocomplete: "off", autofocus: true, placeholder: "e-mail", class: "form-control" %>
+        <%= f.password_field :password, autocomplete: "off", placeholder: "password", class: "form-control" %>
+        <div style="vertical-align: middle">
+          <% if devise_mapping.rememberable? -%>
+            <%= f.label :remember_me, class: 'checkbox' do %>
+                <%= f.check_box :remember_me %>
+                <text class="message">Lembrar de mim</text>
+            <% end %>
+          <% end -%>
+        </div>
+        <div class="d-grid gap-2 col-12 mx-auto">
+          <button id="login" class="btn btn-outline-success"> Log in </button>
+        </div>
+      </div>
+    <% end %>
+    <div>
+      <p class="message"><%= render "devise/shared/links" %></p>
+    </div>
+  </div>
+</div>

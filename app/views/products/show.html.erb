@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 offset-1">
+      <div class="row bg-light m-0">
+        <div class="col-sm-12 d-flex justify-content-between">
+          <span style="font-size: 1.2em;">
+          <%= @product.category.name&.humanize %> > <%= @product.name %>
+        </span>
+          <%= link_to 'Voltar', products_path, class: 'btn btn-dark' %>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-8">
+              <img src="<%= @product.image_url %>" class="card-img-top" alt="<%= @product.name %>" style="border-bottom: 1px solid #eee">
+            </div>
+            <div class="col-lg-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="card-title"> <%= @product.name %> </h5>
+                  <h5 class="card-title"> <%= @product.price %> </h5>
+                  <p class="card-text"> <%= @product.desc1 %> </p>
+                  <div class="d-grid gap-2 col-12 mx-auto mt-2">
+                    <% if signed_in? %>
+                      <%= link_to "", class: "button btn btn-primary text-white", data: {target: @cart_action, addUrl: add_to_cart_path(@product), removeUrl: remove_from_cart_path(@product)}, onclick: "addOrRemoveCart(this, event);" do %>
+                        <span><%= @cart_action %></span> Cart
+                      <% end %>
+                    <% end %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  function addOrRemoveCart(el, event) {
+    event.preventDefault()
+    let url, new_target
+    let this_instance_el = el
+    if($(this_instance_el).data('target') == 'Add to') {
+      url = $(this_instance_el).data('addurl')
+      new_target = "Remove from"
+    } else {
+      url = $(this_instance_el).data('removeurl')
+      new_target = "Add to"
+    }
+    $.ajax({
+      url: url,
+      type: 'put',
+      success: (data) => {
+        $('.cart-count').html(data)
+        $(this_instance_el).find('span').html(new_target)
+        $(this_instance_el).data('target', new_target)
+        alertify.notify(`Product ${new_target.includes('remove') ? 'removed' : 'added' } to cart successfully`, 'success', 5, function(){});
+      }
+    })
+  }
+</script>

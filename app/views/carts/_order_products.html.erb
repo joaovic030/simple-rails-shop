@@ -1,0 +1,22 @@
+<div class="row product-row">
+  <%= ord_prod.hidden_field :product_id, value: ord_prod.object.product.id %>
+  <div class="col-lg-8">
+    <%= link_to ord_prod.object.product do %>
+      <%= image_tag ord_prod.object.product.image_url, size: 100, class: "" %>
+      <span style="font-size: 1.4em; font-weight: bold">
+            <%= ord_prod.object.product.name %>
+          </span>
+    <% end %>
+  </div>
+  <div class="col-lg-1">
+    <%= ord_prod.number_field :quantity, style: 'width: 50px;', class: 'qntd-product' %>
+  </div>
+  <div class="col-lg-2">
+    <h4 class="price-container">R$ <span class="price" style="font-weight: bold; font-size: 0.9em;"> <%= ord_prod.object.product.price %> </span></h4>
+  </div>
+  <div class="col-lg-1" data-equalizer-watch>
+    <%= link_to "" , data: {targetUrl: remove_from_cart_path(ord_prod.object.product)}, onclick: "removeFromCart(this, event);", class: "remove-from-cart" do %>
+      <i class="fas fa-times fa-2x"></i>
+    <% end %>
+  </div>
+</div>

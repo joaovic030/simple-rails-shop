@@ -1,0 +1,20 @@
+// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.card-link {
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    text-decoration: none;
+    box-shadow: 0 2px 5px 1px #ccc;
+    background: none;
+  }
+}
+
+.desc-overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: inherit;
+  height: 2.8em;
+}

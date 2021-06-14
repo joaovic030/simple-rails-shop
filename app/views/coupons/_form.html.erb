@@ -1,0 +1,40 @@
+<%= form_with(model: coupon) do |form| %>
+  <% if coupon.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(coupon.errors.count, "error") %> prohibited this coupon from being saved:</h2>
+
+      <ul>
+        <% coupon.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description, class: "form-control" %>
+  </div>
+  <div class="field">
+    <%= form.label :percentage %>
+    <%= form.number_field :percentage, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :expired_date %>
+    <%= form.date_field :expired_date, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activated %>
+    <%= form.check_box :activated, {}, 'true', 'false' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "#{params[:action] == 'new' ? 'Create' : 'Update' } coupon", class: "btn btn-outline-success" %>
+    <% if coupon.persisted? %>
+      <%= link_to 'Delete', coupon, :method => :delete, data: { :confirm => 'Are you sure?' }, class: "btn btn-outline-danger" %>
+    <% end %>
+    <%= link_to "Back", coupons_path, class: "btn btn-outline-secondary" %>
+  </div>
+<% end %>

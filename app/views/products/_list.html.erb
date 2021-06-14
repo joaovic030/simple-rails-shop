@@ -1,0 +1,26 @@
+<div id="product_filterrific_results">
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <% products.each do |product| %>
+      <div class="col">
+        <div class="card">
+          <%= link_to product, class: "card-link" do %>
+            <img src="<%= product.image_url %>" class="card-img-top" alt="<%= product.name %>" style="border-bottom: 1px solid #eee">
+            <div class="card-body">
+              <h5 class="card-title"> <%= product.name %> </h5>
+              <h5 class="card-title"> R$<%= product.price %> </h5>
+              <div class="desc-overflow mb-2" title="<%= product.desc1 %>">
+                <p class="card-text"> <%= product.desc1 %> </p>
+              </div>
+              <p> <span class="badge bg-info text-dark"> <%= product.category.name %> </span> </p>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="text-center mt-4">
+    <%= paginate products, remote: true %>
+    <%= page_entries_info products %>
+  </div>
+</div>

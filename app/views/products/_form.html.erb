@@ -1,0 +1,61 @@
+<%= form_with(model: product) do |form| %>
+  <% if product.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(product.errors.count, "error") %> prohibited this product from being saved:</h2>
+
+      <ul>
+        <% product.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :brand_id %>
+    <%= form.select :brand_id, options_for_select(@brands, form.object.brand_id), {}, class: "form-select" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :category_id %>
+    <%= form.select :category_id, options_for_select(@categories, form.object.category_id), {}, class: "form-select" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image_url %>
+    <%= form.text_field :image_url, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :for %>
+    <%= form.text_field :for, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.number_field :price, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :desc1 %>
+    <%= form.text_area :desc1, class: "form-control" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :desc2 %>
+    <%= form.text_area :desc2, class: "form-control" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "#{params[:action] == 'new' ? 'Create' : 'Update' } product", class: "btn btn-outline-success" %>
+    <% if product.persisted? %>
+      <%= link_to 'Delete', product, :method => :delete, data: { :confirm => 'Are you sure?' }, class: "btn btn-outline-danger" %>
+    <% end %>
+    <%= link_to "Back", products_management_path, class: "btn btn-outline-secondary" %>
+  </div>
+<% end %>

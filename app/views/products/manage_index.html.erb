@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col-10">
+      <h1>Products</h1>
+    </div>
+    <div class="col-2">
+      <%= link_to new_product_path, class: "btn btn-primary float-end" do %>
+        <i class="fa fa-plus"></i> New product
+      <% end %>
+    </div>
+  </div>
+
+  <%= form_for_filterrific @filterrific do |f| %>
+    <div>
+      <%= f.text_field(:search_query,class: 'filterrific-periodically-observed form-control') %>
+    </div>
+    <div>
+      <%= link_to(
+            'Reset filters',
+            reset_filterrific_url,
+            ) %>
+    </div>
+    <%= render_filterrific_spinner %>
+  <% end %>
+
+  <%= render 'products/partials/management_list', products: @products %>
+</div>

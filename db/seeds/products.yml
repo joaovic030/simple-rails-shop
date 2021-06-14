@@ -1,0 +1,50 @@
+---
+- name: Trend
+  brand: 'Safety 1st'
+  category: 'carrinho'
+  price: 600.00
+  image_url: 'https://www.safety1st.com.br/images/medium/medium_D968B_carrinho_trend_safety-1st_red_perspectiva_esquerda_padrao_IMG_8947.jpg'
+  for: Para crianças de 0 meses a 15 kg
+  desc1: Carrinho com fechamento guarda-chuva compatível com bebê conforto, assento reversível e removível, com encosto reclinável em 3 posições.
+  desc2:
+    <p>Carrinho com fechamento guarda-chuva compatível com bebê conforto, assento reversível e removível, com encosto reclinável em 3 posições.</p>
+    <p>O Carrinho Trend Safety 1st possui 3 posições do encosto sendo a primeira sentado, a segunda levemente reclinado e a terceira deitado. O assento pode ser revertido, de frente para os pais ou virado para o mundo, e pode ser removido para armazenar ou encaixar o bebê conforto (vendido separadamente com base veicular).</p>
+    <p>Fechamento exclusivo na categoria Travel System tipo guarda-chuva, compacto e leve. Possui 4 rodas duplas com trava de direcionamento nas rodas dianteiras e freios interligados nas rodas traseiras, manopla dupla acolchoada, amplo cesto de compras para até 4,5kg com zíper lateral que facilita o acesso.</p>
+    <p>Capota retrátil e extensível com para-sol e visor para os pais, cinto de 5 pontos com protetor de ombro acolchoado, 3 alturas para cinto e apoio para os pés emborrachado. Tecido fácil de limpar. Para proceder com o fechamento correto do carrinho, o assento deve estar revertido contrário a visão de quem guia.</p>
+
+- name: Zippy
+  brand: 'Safety 1st'
+  category: 'carrinho'
+  price: 900.00
+  image_url: 'https://www.safety1st.com.br/images/medium/medium_T5003TSTRIO_safety1st_conjunto_ts_black_rose_padrao_IMG_4304.jpg'
+  for: Para crianças de 7,2 meses a 15 kg
+  desc1: Carrinho portátil com tamanho fechado super compacto de apenas 54,4 x 40 x 16 cm.
+  desc2:
+    <p>Carrinho portátil com tamanho fechado super compacto de apenas 54,4 x 40 x 16 cm.</p>
+    <p>Leve estrutura de alumínio, pesando somente 5,4 kg, com bolsa para transporte para facilitar a vida dos pais. Mantém o conforto com as 2 posições de reclínio e capota com proteção UV50+.</p>
+
+- name: Andador Melody Garden
+  brand: 'Safety 1st'
+  category: 'Acessórios'
+  price: 719.99
+  image_url: 'https://www.safety1st.com.br/images/medium/medium_11389_activity_centre_melody_garden_safety_1st_lifestyle.jpg'
+  for: Para crianças de 7,2 meses a 12 kg
+  desc1: Centro de atividades completo, com funções de balanço e andador. Assento giratório 360º removível e lavável, bandeja removível com brinquedos, luzes e sons da natureza.
+  desc2:
+    <p>Centro de atividades completo, com funções de balanço e andador. Assento giratório 360º removível e lavável, bandeja removível com brinquedos, luzes e sons da natureza.</p>
+    <p>Funções de balanço, andador e centro de entretenimento com 3 posições de altura e assento giratório 360º removível e lavável. Bandeja removível com brinquedos, luzes e sons da natureza.</p>
+    <p>Possui exclusivo sistema anti-quedas que evita acidentes em escadas e pisos irregulares, aprovado pelo INMETRO conforme a norma ABNT NBR 16.311 para crianças entre cerca de 6 meses até 12kg.</p>
+
+- name: MiloFix
+  brand: 'Maxi-Cosi'
+  category: 'Cadeirinha'
+  price: 1200.00
+  image_url: 'https://www.safety1st.com.br/images/medium/medium_Q23S_safetys1st_booster_clicksafe_black_padrao_IMG_7917.jpg'
+  for: Para crianças de 0 meses a 18 kg
+  desc1: Cadeirinha do nascimento aos 18kg com fixação ISOFIX. É reversível e permanece até os 13kg de costas para o movimento, aumentando a segurança e o conforto dos bebês.
+  desc2:
+    <p>Cadeirinha do nascimento aos 18kg com fixação ISOFIX. É reversível e permanece até os 13kg de costas para o movimento, aumentando a segurança e o conforto dos bebês.</p>
+    <p>Sistema de reclínio ideal para os recém-nascidos, 6 posições de ajuste do apoio de cabeça em conjunto com a altura dos cintos e assento acolchoado ultra macio lavável na máquina.</p>
+    <p>Fixação ISOFIX super segura, com indicadores que mostram se a instalação está correta e ponto de ancoragem superior modelo Top Tether para maior estabilidade.</p>
+    <p>Instalação de frente e de costas para o movimento ajustável com um simples giro da base e ganchos laterais para apoiar os cintos enquanto acomoda a criança.</p>
+    <p>Aprovado pelo INMETRO conforme a norma ABNT NBR 14.400 para crianças do nascimento aos 18kg (Grupos 0+ e 1) e pelos mais rígidos testes internacionais de segurança.</p>

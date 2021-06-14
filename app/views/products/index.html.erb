@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+  <h1>Products</h1>
+
+  <%= form_for_filterrific @filterrific do |f| %>
+    <div class="col-sm-10">
+      <%= f.label :search_query, "Search by name" %>
+      <%= f.text_field(:search_query,class: 'filterrific-periodically-observed form-control') %>
+    </div>
+<!--    <div>-->
+<!--      Country-->
+      <%#= f.select(:with_country_id,@filterrific.select_options[:with_country_id],{ include_blank: '- Any -' }) %>
+<!--    </div>-->
+    <div class="col-sm-2">
+      <%= f.label :sorted_by %>
+      <%= f.select(:sorted_by, options_for_select(['ascendente', 'decrescente'], 'ascendente'), {}, class: 'filterrific-periodically-observed form-select') %>
+    </div>
+    <div>
+      <%= link_to(
+            'Reset filters',
+            reset_filterrific_url,
+            ) %>
+    </div>
+    <%= render_filterrific_spinner %>
+  <% end %>
+
+  <%= render 'products/list', products: @products %>
+</div>

@@ -1,0 +1,31 @@
+<div id="coupon_filterrific_results">
+  <table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+      <th> ID </th>
+      <th> Token </th>
+      <th> ExpiredDate </th>
+      <th> Activated </th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <% coupons.each do |coupon| %>
+      <tr>
+        <td> <%= coupon.id %> </td>
+        <td> <%= coupon.token %> </td>
+        <td> <%= coupon.expired_date %> </td>
+        <td> <%= coupon.activated %> </td>
+        <td> <%= link_to coupon_path(coupon), class: "btn btn-sm btn-default" do %> <i class="fa fa-search"></i> <% end %> </td>
+      </tr>
+    <% end %>
+    </tbody>
+  </table>
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+  </div>
+
+  <div class="text-center mt-4">
+    <%= paginate coupons, remote: true %>
+    <%= page_entries_info coupons %>
+  </div>
+</div>

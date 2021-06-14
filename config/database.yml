@@ -1,0 +1,26 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  pool: 5
+  timeout: 5000
+
+development:
+  <<: *default
+  database: shop-rails
+  host: localhost
+  username: postgres
+  password: '344312'
+
+test:
+  <<: *default
+  database: shop-rails
+  host: localhost
+  username: postgres
+  password: '344312'
+
+production:
+  <<: *default
+  database: sample_postgres_production
+  host: localhost
+  username: postgres
+  password: '344312'

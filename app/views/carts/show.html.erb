@@ -1,0 +1,113 @@
+<style>
+  .product-row {
+    justify-content: center;
+    align-items: center;
+  }
+</style>
+
+<div class="container" id="simple-cart">
+  <div class="text-center">
+    <h4> My cart </h4>
+    <p class="mb0"> You've selected <span class="cart-count"><%= current_user.cart_count %></span> products!</p>
+  </div>
+
+  <%= form_with model: @order do |form| %>
+    <%= form.hidden_field :user_id, value: current_user&.id %>
+    <%= form.hidden_field :total_price %>
+    <%= form.hidden_field :discount %>
+    <div class="row">
+      <div class="col-lg-9">
+        <%= form.fields_for :order_products do |ord_prod| %>
+          <%= render 'carts/order_products', ord_prod: ord_prod %>
+        <% end %>
+      </div>
+      <div class="col-lg-3">
+        <% if @cart_products.present? %>
+          <div class="card h-100">
+            <div class="card-body">
+              <h5 class="card-title"> Total: <span id="total-price"></span> </h5>
+              <p> Any coupon? </p>
+              <div class="input-group mb-3" id="coupon-container">
+                <input type="text" id="coupon-input" class="form-control">
+                <button class="btn btn-outline-secondary" type="button" id="submit-coupon" onclick="findCoupon(this, event)"> Apply </button>
+              </div>
+              <div class="coupons-section">
+
+              </div>
+              <h5 class="card-title"> Total with coupon: R$<span id="total-price-final"></span> </h5>
+              <div class="d-grid gap-2 col-12 mx-auto mt-2">
+                <button class="btn btn-primary"> Order </button>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+<%= javascript_pack_tag 'cart' %>
+<script type="text/javascript" charset="utf-8">
+  // ADICIONADO AQUI POR UM PROBLEMINHA COM O WEBPACKER PARA IMPORTAR MINHA FUNCAO COM OS PARAMETROS CORRETOS QUE EU PASSO NO ELEMENTO QUE É FEITO O TRIGGER
+  function removeFromCart(el, event) {
+    event.preventDefault();
+    let this_instance_el = $(el)
+    let url = $(this_instance_el).data('targeturl')
+    $.ajax({
+      url: url,
+      type: 'put',
+      success: (data) => {
+        $('.cart-count').html(data)
+        $(this_instance_el).closest('.cart-movie').slideUp();
+        window.location.replace("/cart");
+      }
+    })
+  }
+
+  $("#coupon-input").keyup(function(event) {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+      $("#submit-coupon").click();
+    }
+  });
+  function findCoupon(el, event) {
+    event.preventDefault();
+
+    let value = $(el).parent("div#coupon-container").find('input')[0].value
+    $.get(`/coupons/token/${value}`)
+      .done((data) => {
+        $("#uniq-coupon").remove();
+        let badge = `<span class="badge bg-success w-25 ml-4" id="uniq-coupon" data-percentage="${data.percentage}"> ${data.name} </span>`
+        $(".coupons-section").append(badge)
+        alert(`Coupon applied!`)
+        setTimeout(function () {
+          sumAll();
+        }, 2)
+      })
+      .fail((e)=> {
+        alert("This coupon was not found!")
+      })
+  }
+  function sumAll() {
+    let totalPrice = 0
+    let totalPriceWithDiscount = 0
+    let price_fields_jquery = document.querySelectorAll(".product-row")
+
+    $(price_fields_jquery).each((index, element) => {
+      let val = parseFloat($(element).find(".price").text())
+      let qntd = parseInt($(element).find(".qntd-product").val())
+      totalPrice += parseFloat(val*qntd)
+    })
+    let coupon_discount = $("#uniq-coupon").data('percentage')
+    totalPriceWithDiscount = totalPrice
+    if(coupon_discount) {
+      totalPriceWithDiscount = totalPrice - (totalPrice*(parseFloat(coupon_discount)/100))
+      $("#order_discount").val(coupon_discount)
+    }
+    $("#total-price").text(totalPrice)
+    $("#total-price-final").text(totalPriceWithDiscount)
+    $("#order_total_price").val(totalPriceWithDiscount)
+  }
+  sumAll();
+  $(".qntd-product").change(()=> sumAll())
+</script>

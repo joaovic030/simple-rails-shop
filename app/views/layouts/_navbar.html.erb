@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light ml-2 mr-2 d-flex justify-content-between align-items-center">
+  <a class="navbar-brand" style="margin-left: 1.5em;" href="/">
+    SimpleShop
+  </a>
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#userNavSection" aria-controls="userNavSection" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <% if current_user %>
+    <div class="collapse navbar-collapse" id="userNavSection" style="flex-grow: 0;">
+      <ul class="navbar-nav d-flex align-items-center">
+        <li>
+          <%= link_to cart_path do %>
+            <i class="fas fa-shopping-cart text-primary"></i> My Cart
+            (<span class="cart-count"><%= current_user.cart_count %></span>)
+          <% end %>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <%= current_user.email %>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="userNavSectionLink">
+            <% if current_user.admin %>
+              <li><a class="dropdown-item" href="#"> Settings </a></li>
+              <li> <%= link_to "Products management", products_management_path, class: "dropdown-item" %> </li>
+              <li> <%= link_to "Coupons", coupons_path, class: "dropdown-item" %> </li>
+            <% end %>
+            <li> <%= link_to "Orders", orders_path, class: "dropdown-item" %> </li>
+            <li>
+              <%= link_to destroy_user_session_path, method: :delete, class: "dropdown-item", id: "sign-out" do %>
+                <i class="fas fa-sign-out-alt" style="color: red"></i> Sign out
+              <% end %>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  <% end %>
+</nav>

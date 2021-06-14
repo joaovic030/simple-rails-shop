@@ -1,0 +1,41 @@
+<div class="container">
+  <p id="notice"><%= notice %></p>
+  <p>
+    <strong> Purchase number:</strong>
+    <%= @order.id %>
+  </p>
+  <p>
+    <strong>User:</strong>
+    <%= @order.user.email %>
+  </p>
+
+  <table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+      <th> Product </th>
+      <th> Quantity </th>
+      <th> Price </th>
+    </tr>
+    </thead>
+    <tbody>
+    <% @order.order_products.each do |order_products| %>
+      <tr>
+        <td> <%= order_products.product.name %> </td>
+        <td> <%= order_products.quantity %> </td>
+        <td> <%= order_products.product.price %> </td>
+      </tr>
+    <% end %>
+    <tr>
+      <th colspan="2"> Discounts </th>
+      <td> <%= @order.discount ? "#{@order.discount}%" : "None" %> </td>
+    </tr>
+    <tr>
+      <th colspan="2"> Total price </th>
+      <td> R$ <%= @order.total_price %> </td>
+    </tr>
+    </tbody>
+  </table>
+  <% if current_user.admin %>
+    <%= link_to 'Back', orders_path %>
+  <% end %>
+</div>
