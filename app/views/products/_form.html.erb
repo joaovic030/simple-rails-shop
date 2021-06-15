@@ -52,7 +52,7 @@
   </div>
 
   <div class="actions">
-    <%= form.submit "#{params[:action] == 'new' ? 'Create' : 'Update' } product", class: "btn btn-outline-success" %>
+    <%= form.submit "#{product.persisted? ? 'Update' : 'Create' } product", class: "btn btn-outline-success" %>
     <% if product.persisted? %>
       <%= link_to 'Delete', product, :method => :delete, data: { :confirm => 'Are you sure?' }, class: "btn btn-outline-danger" %>
     <% end %>

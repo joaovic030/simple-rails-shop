@@ -5,294 +5,80 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd284d6a-dac3-453e-9cc1-a6a80d86f5a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/simple-rails-shop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.rspec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.ruby-version" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/config/manifest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/brands.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/carts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/categories.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/coupons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/login.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/order_products.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/orders.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/products.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/channels/application_cable/channel.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/channels/application_cable/connection.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/brands_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/carts_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/categories_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/concerns/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/coupons_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/order_products_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/orders_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/products_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/brands_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/carts_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/categories_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/coupons_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/navbar_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/order_products_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/orders_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/products_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/channels/consumer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/channels/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/packs/application.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/packs/cart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/packs/products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/javascript/stylesheets/application.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/jobs/application_job.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/mailers/application_mailer.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/application_record.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/brand.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/cart.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/category.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/concerns/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/coupon.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/order.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/order_product.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/brands/_brand.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/brands/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/brands/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/brands/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/brands/index.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/brands/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/brands/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/brands/show.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/carts/_cart.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/carts/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/carts/_order_products.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/carts/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/carts/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/carts/index.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/carts/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/carts/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/carts/show.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/categories/_category.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/categories/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/categories/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/categories/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/categories/index.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/categories/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/categories/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/categories/show.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/coupons/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/coupons/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/coupons/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/coupons/partials/_list.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/coupons/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/devise/mailer/email_changed.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/devise/mailer/password_change.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/devise/mailer/reset_password_instructions.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/devise/mailer/unlock_instructions.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/devise/shared/_error_messages.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/devise/shared/_links.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/_login.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/order_products/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/order_products/_order_product.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/order_products/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/order_products/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/order_products/index.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/order_products/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/order_products/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/order_products/show.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/orders/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/orders/_order.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/orders/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/orders/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/orders/index.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/orders/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/orders/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/orders/show.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/_list.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/_product.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/edit.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/index.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/index.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/manage_index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/manage_index.js.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/management_show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/partials/_management_list.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/products/show.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/settings/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/bundle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/rails" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/rake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/setup" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/spring" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/webpack" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/webpack-dev-server" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/yarn" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config.ru" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/boot.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/cable.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/credentials.yml.enc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/environment.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/environments/test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/application_controller_renderer.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/assets.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/content_security_policy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/cookies_serializer.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/devise.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/inflections.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/mime_types.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/permissions_policy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/redis.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/locales/devise.en.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/locales/en.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/puma.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/spring.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/storage.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack/development.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack/environment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack/production.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpacker.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20210611033010_devise_create_users.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20210612042703_create_brands.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20210612042715_create_categories.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20210612042854_create_products.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20210612043824_create_carts.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20210612043940_create_orders.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20210612044109_create_order_products.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20210613200418_create_coupons.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/seeds/products.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/assets/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/tasks/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/422.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/apple-touch-icon-precomposed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/factories/brands.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/factories/carts.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/factories/categories.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/factories/coupons.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/factories/order_products.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/factories/orders.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/factories/products.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/helpers/brands_helper_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/helpers/carts_helper_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/helpers/categories_helper_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/helpers/coupons_helper_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/helpers/order_products_helper_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/helpers/orders_helper_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/helpers/products_helper_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/brand_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/cart_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/category_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/coupon_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/order_product_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/order_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/product_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/requests/brands_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/requests/carts_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/requests/categories_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/requests/coupons_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/requests/order_products_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/requests/orders_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/requests/products_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/routing/brands_routing_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/routing/carts_routing_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/routing/categories_routing_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/routing/order_products_routing_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/routing/orders_routing_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/routing/products_routing_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/brands/edit.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/brands/index.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/brands/new.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/brands/show.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/carts/edit.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/carts/index.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/carts/new.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/carts/show.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/categories/edit.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/categories/index.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/categories/new.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/categories/show.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/coupons/index.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/coupons/show.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/order_products/edit.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/order_products/index.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/order_products/new.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/order_products/show.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/orders/edit.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/orders/index.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/orders/new.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/orders/show.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/products/edit.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/products/index.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/products/new.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/products/show.html.erb_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/storage/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/application_system_test_case.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/channels/application_cable/connection_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/files/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/fixtures/users.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/helpers/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/integration/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/mailers/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/models/user_test.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/system/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tmp/pids/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vendor/.keep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/products_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/products_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/brand.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/brand.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/category.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/category.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/coupon.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/coupon.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/order.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/order.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/coupons/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/coupons/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/coupons/partials/_list.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/coupons/partials/_list.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/_navbar.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/products/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/products/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/products/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/products/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/factories/brands.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/brands.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/factories/carts.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/carts.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/factories/categories.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/categories.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/factories/coupons.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/coupons.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/factories/order_products.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/order_products.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/factories/orders.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/orders.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/factories/products.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/products.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/helpers/brands_helper_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/helpers/carts_helper_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/helpers/categories_helper_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/helpers/coupons_helper_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/helpers/order_products_helper_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/helpers/orders_helper_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/helpers/products_helper_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/brand_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/brand_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/cart_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/category_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/category_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/coupon_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/coupon_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/order_product_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/order_product_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/order_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/order_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/product_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/product_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/rails_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/requests/brands_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/requests/carts_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/requests/categories_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/requests/coupons_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/requests/order_products_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/requests/orders_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/requests/products_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/routing/brands_routing_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/routing/carts_routing_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/routing/categories_routing_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/routing/order_products_routing_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/routing/orders_routing_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/routing/products_routing_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/brands/edit.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/brands/index.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/brands/new.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/brands/show.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/carts/edit.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/carts/index.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/carts/new.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/carts/show.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/categories/edit.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/categories/index.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/categories/new.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/categories/show.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/coupons/index.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/coupons/show.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/order_products/edit.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/order_products/index.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/order_products/new.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/order_products/show.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/orders/edit.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/orders/index.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/orders/new.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/orders/show.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/products/edit.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/products/index.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/products/new.html.erb_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/products/show.html.erb_spec.rb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -330,8 +116,8 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="rails c" />
       <command value="rails console" />
+      <command value="rails c" />
     </option>
   </component>
   <component name="RunManager" selected="Rails.Development: simple-rails-shop">
@@ -452,11 +238,25 @@
       <workItem from="1623469702346" duration="3268000" />
       <workItem from="1623504171835" duration="27304000" />
       <workItem from="1623594503378" duration="30178000" />
-      <workItem from="1623629064926" duration="12869000" />
+      <workItem from="1623629064926" duration="14634000" />
+      <workItem from="1623711572977" duration="633000" />
+      <workItem from="1623714186190" duration="19711000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -1,5 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe Category, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  let(:category) { create(:category) }
+
+  it { expect(category).to be_valid }
+  context 'when name blank' do
+    it { expect(build(:category, name: nil)).to_not be_valid }
+  end
 end

@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: %i[ show edit update destroy management_show ]
-
+  before_action :set_options, only: %i[ management_show new create update ]
   # GET /products or /products.json
   def index
 
@@ -30,8 +30,7 @@ class ProductsController < ApplicationController
   end
 
   def management_show
-    @categories = Category.all.map { |c| [c.name, c.id] }
-    @brands = Brand.all.map { |c| [c.name, c.id] }
+
   end
 
   # GET /products/1 or /products/1.json
@@ -42,8 +41,6 @@ class ProductsController < ApplicationController
   # GET /products/new
   def new
     @product = Product.new
-    @categories = Category.all.map { |c| [c.name, c.id] }
-    @brands = Brand.all.map { |c| [c.name, c.id] }
   end
 
   # GET /products/1/edit
@@ -93,6 +90,10 @@ class ProductsController < ApplicationController
       @product = Product.find(params[:id])
     end
 
+    def set_options
+      @categories = Category.all.map { |c| [c.name, c.id] }
+      @brands = Brand.all.map { |c| [c.name, c.id] }
+    end
     # Only allow a list of trusted parameters through.
     def product_params
       params.require(:product).permit(:name, :brand_id, :category_id, :price, :image_url, :for, :desc1, :desc2)

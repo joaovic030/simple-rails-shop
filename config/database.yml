@@ -13,7 +13,7 @@ development:
 
 test:
   <<: *default
-  database: shop-rails
+  database: shop-rails-test
   host: localhost
   username: postgres
   password: '344312'

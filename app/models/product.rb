@@ -2,6 +2,8 @@ class Product < ApplicationRecord
   belongs_to :brand
   belongs_to :category
 
+  validates :category, :brand, :name, :price, :for, :image_url, :desc1, :desc2, presence: true
+
   def cart_action(current_user_id)
     if $redis.sismember "cart#{current_user_id}", id
       "Remove from"

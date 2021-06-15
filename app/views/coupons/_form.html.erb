@@ -31,7 +31,7 @@
   </div>
 
   <div class="actions">
-    <%= form.submit "#{params[:action] == 'new' ? 'Create' : 'Update' } coupon", class: "btn btn-outline-success" %>
+    <%= form.submit "#{coupon.persisted? ? 'Update' : 'Create' } coupon", class: "btn btn-outline-success" %>
     <% if coupon.persisted? %>
       <%= link_to 'Delete', coupon, :method => :delete, data: { :confirm => 'Are you sure?' }, class: "btn btn-outline-danger" %>
     <% end %>

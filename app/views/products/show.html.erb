@@ -6,7 +6,7 @@
           <span style="font-size: 1.2em;">
           <%= @product.category.name&.humanize %> > <%= @product.name %>
         </span>
-          <%= link_to 'Voltar', products_path, class: 'btn btn-dark' %>
+          <%= link_to 'Back', products_path, class: 'btn btn-dark' %>
         </div>
       </div>
       <div class="card">
@@ -23,7 +23,7 @@
                   <p class="card-text"> <%= @product.desc1 %> </p>
                   <div class="d-grid gap-2 col-12 mx-auto mt-2">
                     <% if signed_in? %>
-                      <%= link_to "", class: "button btn btn-primary text-white", data: {target: @cart_action, addUrl: add_to_cart_path(@product), removeUrl: remove_from_cart_path(@product)}, onclick: "addOrRemoveCart(this, event);" do %>
+                      <%= link_to "", class: "button btn btn-primary text-white addOrRemoveBtn", data: {target: @cart_action, addUrl: add_to_cart_path(@product), removeUrl: remove_from_cart_path(@product)}, onclick: "addOrRemoveCart(this, event);" do %>
                         <span><%= @cart_action %></span> Cart
                       <% end %>
                     <% end %>

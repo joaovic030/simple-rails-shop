@@ -1,6 +1,7 @@
 class Coupon < ApplicationRecord
-
   before_create :set_token
+
+  validates :expired_date, :percentage, presence: true
 
   protected
 
