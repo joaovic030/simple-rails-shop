@@ -19,10 +19,11 @@
 - Ainda tem CRUD de Produtos e Cupons e a listagem de Orders.
 
 ### O que foi utilizado e informações gerais
-#### Linguagem
+#### Linguagem e ferramentas
 - Ruby 2.7.1
 - Rails 6.1.3
 - Postgresql 12.1
+- Redis
 
 #### Gems e outras bibliotecas utilizadas
 - Devise
@@ -31,6 +32,7 @@
 - Capybara
 - Kaminari
 - Bootstrap
+- Redis
 ____
 ### O que eu preciso fazer para executar e testar essa aplicação
 **Deve-se trocar as configuracoes dos bancos em database.yml para as suas** <br>
